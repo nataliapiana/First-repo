@@ -58,7 +58,7 @@ table {
 }
 
 body {
-	background-color: #FFF1B8;
+	background-color: #FBD14F;
 }
 header {
 	background-color: #ffffff;
@@ -136,6 +136,10 @@ p {
 .page:nth-child(3) {
 	top: 200%;
 }
+.page:nth-child(4) {
+	top: 300%;
+	background-color: #F8DEC7;
+}
 
 
 .introduction {
@@ -161,11 +165,19 @@ p {
 	margin-left: auto;
 	float: center;
 }
+#bee {
+	position: absolute;
+	bottom: 250px;
+	float: center;
+	margin-left: 250px;
+	animation: slide 4s infinite ease-in-out;
+}
 .text {
 	float: right;
 	width: 100%;
 	position: absolute;
-	bottom: 120px;
+	bottom: 250px;
+
 	/*padding-left: 50%;*/
 	/*right: 32%;*/
 }
