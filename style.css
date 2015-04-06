@@ -142,12 +142,14 @@ p {
 }
 
 
-.introduction {
-	margin-top: 500px;
+#firstheading {
+	margin-top: 50px;
 	clear: both;
+	position: relative;
+}
+.headings {
 	text-align: center;
 	margin: auto;
-	position: relative;
 }
 #illustration {
 	text-align: center;
@@ -160,6 +162,15 @@ p {
   	/*transform: translateY(-50%);*/
 
 }
+#secondillustration {
+	text-align: center;
+	margin: auto;
+	/*position: absolute;*/
+	top: 55%;
+}
+#secondillustration img {
+	padding-top: 60px;
+}
 #illustration img {
 	margin-right: auto;
 	margin-left: auto;
@@ -167,10 +178,11 @@ p {
 }
 #bee {
 	position: absolute;
-	bottom: 250px;
+	bottom: 220px;
 	float: center;
 	margin-left: 250px;
 	animation: slide 4s infinite ease-in-out;
+
 }
 .text {
 	float: right;
@@ -183,9 +195,6 @@ p {
 }
 
 article {
-	/*position: absolute;*/
-	/*top: 300%;*/
-	/*margin-top: 300px;*/
 	width: 330px;
 	font-family: Roboto, sans-serif;
 	font-weight: 400;
@@ -199,8 +208,7 @@ h1 {
 	font-weight: bold;
 	font-size: 24pt;
 	margin-top: 70px;
-	/*padding-top: 20px;*/
-/**/
-
-
+}
+#secondheading h1 {
+	margin-top: 40px;
 }
