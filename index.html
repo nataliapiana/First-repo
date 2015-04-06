@@ -6,13 +6,14 @@
 	<link type="text/css" rel="stylesheet" href="style.css">
 	<link href='http://fonts.googleapis.com/css?family=Oswald:300|Roboto:100,400' rel='stylesheet' type='text/css'>
 	<script src="//use.edgefonts.net/abril-fatface:n4,i4:all.js"></script>
+	<script src="js/jquery.windows.js"></script>
 	<link rel="stylesheet" href="stylesheet.css" type="text/css" charset="utf-8" />
 	<script src="jquery-1.11.2.min.js"></script>
 	<title>Pollination</title>
 
 </head>
 <body>
-	<section id="first", class="page">
+	<section id="first", class="window">
 		<header>
 	
 			<nav>
@@ -30,30 +31,121 @@
 			<h1>How do plants reproduce?</h1>
 		</div>
 		<div id="illustration">
-			<img src="homepageimage.png"/>
+			<img src="images/homepageimage.png"/>
         </div>
         <figure id="bee">
-        	<img src="bee.png"/>
+        	<img src="images/bee.png" onmouseover="this.src='images/bee3.png'" onmouseout="this.src='images/bee.png'"/>
         </figure>	
 		<container class="text">
 			<article>On Earth there are several ethnic groups formed by humans featuring the same physionomic attributes
 			</article>
 		</container>
 	</section>
-	<section id="second" class="page">
-		<div class="headings">
+	<section id="second" class="window">
+		<div class="headings" id="secondheading">
 			<h1>Anatomy of Apple Flower</h1>
 		</div>	
 		<div id="secondillustration">
-			<img src="pagetwoimage.png"/>
+			<img src="images/pagetwoimage.png"/>
 		
 	</section>
-	<section id="third" class="page">
+	<section id="third" class="window">
+		<div class="headings" id="thirdheading">
+			<h1>Fertilisation</h1>
+		</div>	
 	</section>
-	<section id="fourth" class="page">
+	<section id="fourth" class="window">
+		<div class="headings" id="fourthheading">
+			<h1>Meiosis + Mitosis</h1>
+		</div>	
+	</section>
+	<section id="fifth" class="window">
+		<div class="headings" id="fifthheading">
+			<h1>From flower to fruit</h1>
+		</div>	
+	</section>
+	<section id="sixth" class="window">
+		<div class="headings" id="sixthheading">
+			<h1>Pollinators</h1>
+		</div>	
 	</section>
 	<script src="//use.edgefonts.net/abril-fatface:n4,i4:all.js"></script>
-	<script src="js/pollinationjquery.js"></script>
+	<script src="jquery-1.11.2.min.js"></script>
+	<script src="pollinationjquery.js"></script>
+	<script>
+            // $(document).ready(function(){
+            //     var $windows = $('.window');
+            //     $windows.windows({
+            //         snapping: true,
+            //         snapSpeed: 500,
+            //         snapInterval: 1100,
+            //         onScroll: function(s){},
+            //         onSnapComplete: function($el){},
+            //         onWindowEnter: function($el){}
+            //     });
+            // });
+// 		$( document ).ready(function() {
+ 
+//     		$( "a" ).click(function( event ) {
+ 
+//         alert( "Thanks for visiting!" );
+ 
+//     });
+ 
+// });
+// $(document).ready(function(){
+//     animateFigure();
+    
+// });
+
+// function makeNewPosition(){
+    
+//     // Get viewport dimensions (remove the dimension of the div)
+//     var h = $(window).height() - 50;
+//     var w = $(window).width() - 50;
+    
+//     var nh = Math.floor(Math.random() * h);
+//     var nw = Math.floor(Math.random() * w);
+    
+//     return [nh,nw];    
+    
+// }
+
+// function animateFigure(){
+//     var newq = makeNewPosition();
+//     var oldq = $('#bee').offset();
+//     var speed = calcSpeed([oldq.top, oldq.left], newq);
+    
+//     $('#bee').animate({ top: newq[0], left: newq[1] }, speed, function(){
+//       animateDiv();        
+//     });
+    
+// };
+
+// function calcSpeed(prev, next) {
+    
+//     var x = Math.abs(prev[1] - next[1]);
+//     var y = Math.abs(prev[0] - next[0]);
+    
+//     var greatest = x > y ? x : y;
+    
+//     var speedModifier = 0.1;
+
+//     var speed = Math.ceil(greatest/speedModifier);
+
+//     return speed;
+
+// }
+// function someFunction2() {
+//     $("#bee").animate(
+//         {rotation: 360},
+//         { duration: 500,
+//           step: function(now, fx) {
+//           $(this).css({"transform": "rotate("+now+"deg)"});
+//         }
+// }
+        </script>
+
 </body>
 </html>
 	<!--  -->
