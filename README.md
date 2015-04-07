@@ -1,3 +1,6 @@
-# First-repo
-My first repository on Github
-I like insects, asian food and South Africa
+Pollination
+(My first repository on Github)
+
+Educational platform.
+Scientific topics for young learner.
+Pollination process illustrated.
