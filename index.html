@@ -4,11 +4,12 @@
 	<script src="//use.typekit.net/jcm4iol.js"></script>
 	<script>try{Typekit.load();}catch(e){}</script>
 	<link type="text/css" rel="stylesheet" href="style.css">
+	<link type="text/css" rel="stylesheet" href="windows.scss">
 	<link href='http://fonts.googleapis.com/css?family=Oswald:300|Roboto:100,400' rel='stylesheet' type='text/css'/>
 	<script src="//use.edgefonts.net/abril-fatface:n4,i4:all.js"></script>
-	<script src="js/jquery.windows.js"></script>
+
+	
 	<link rel="stylesheet" href="stylesheet.css" type="text/css" charset="utf-8" />
-	<script src="jquery-1.11.2.min.js"></script>
 	<title>Pollination</title>
 
 </head> 
@@ -71,8 +72,27 @@
 	</section>
 	<script src="//use.edgefonts.net/abril-fatface:n4,i4:all.js"></script>
 	<script src="jquery-1.11.2.min.js"></script>
+	<script src="assets/js/jquery.windows.js"></script>
 	<script src="pollinationjquery.js"></script>
 	<script>
+		$(document).ready(function(){
+
+    $('.window').windows({
+        snapping: true,
+        snapSpeed: 500,
+        snapInterval: 1100,
+        onScroll: function(scrollPos){
+            // scrollPos:Number
+        },
+        onSnapComplete: function($el){
+            // after window ($el) snaps into place
+        },
+        onWindowEnter: function($el){
+            // when new window ($el) enters viewport
+        }
+    })
+
+});
             // $(document).ready(function(){
             //     var $windows = $('.window');
             //     $windows.windows({
