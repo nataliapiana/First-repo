@@ -195,6 +195,12 @@ p {
 	-o-transform: translate(-50%, 0); /* Opera */
 
 }
+#info {
+	display: none;
+}
+/*.petals {
+	display: none;
+}*/
 
 #two, #three, #four, #five, #six, #seven, #eight, #nine, #ten, #eleven, #twelve, #thirteen, #fourteen, #fifthteen {
 	display: none;
